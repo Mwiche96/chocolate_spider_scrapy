@@ -27,3 +27,11 @@ ITEM_PIPELINES = {
     'chocolatescraper.pipelines.DuplicatesPipeline': 200,
     'chocolatescraper.pipelines.SavingToPostgresPipeline': 300,
 }
+
+
+DOWNLOADER_MIDDLEWARES = {
+    #'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    #'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+}
+
+CONCURRENT_REQUESTS = 1
